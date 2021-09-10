@@ -1,0 +1,62 @@
+html {
+    background-color:bisque;
+    background-image: url(images/background.png);
+    color: black;
+}
+h1, h2{
+    border-style: dotted;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Tourney';
+    color: coral;
+}
+
+#nav_index ul{
+    /*removes the bullet of the unordered list*/
+    list-style-type: none;
+    width: 100%;
+    height: 30px;
+    /*centers menu*/
+    margin: 0 auto;
+    background-color:coral;
+}
+#nav_index ul li {
+    /* styles list items*/
+    width: 16%;
+    float: left;
+    /* places horizontally in centers*/
+    text-align: center;
+}
+
+.Intro {
+    font-size: 30px;
+    color:black;
+    text-align: left;
+    font-family: 'Sacramento'
+}
+h3{
+    color: black;
+    font-family: 'Great Vibes';
+    font-size: 30px;
+   
+} 
+
+.movies, .foodie, .weeb{
+    color:black;
+    font-family: 'Sacramento';
+    font-size: 25px;
+    
+}
+.movies ul{
+    list-style-type: none;
+}
+main {
+    column-count: 2;
+    column-width: 0px auto; /*tells the browser how many pixels to show*/
+    margin-top: 0px;
+    margin-left:0px;
+}
+#nav_index{
+    font-family: 'Great Vibes';
+    font-size: 25px;
+}

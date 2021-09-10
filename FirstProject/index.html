@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyePonyo's World</title>
+    <!-- This is how you link your css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src="style2.js"></script> -->
+    <!-- This is how link font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Sacramento&family=Tourney:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav_index">
+        <ul>
+
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/panhia-vang/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.webtoons.com/en/" target="_blank">Webtoon</a></li>
+            <li><a href="https://www.google.com/search" target="_blank">Google</a></li>
+        </ul>
+    </nav>
+    <h1>Greeting Netizen to AyePonyo's World!</h1>
+    <p>
+        <img src="https://c.tenor.com/uGN3n2O03GIAAAAM/anime-wave.gif" alt="Wave" align="left">
+    </p>
+    <div class="Intro">
+        <p>Welcome to this small corner of the internet!
+            I'm a new creator, enjoy this simplicity webpage :)
+            My name is <b>Panhia Vang</b> and this is my first webdesign project.
+            Since your already here, explore friend!
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2>Enjoy the picture....</h2>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 5</div> -->
+            <img src="images/ponyo.jfif" style="width:100%">
+            <div class="text">"A true friend accepts who you are, but also helps you become who you should be"</div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 5</div> -->
+            <img src="images/ponyo 1.jfif" style="width:100%">
+            <div class="text">"Because of you, I laugh a little harder, cry a little less, and smile a lot more"</div>
+        </div>
+
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 5</div> -->
+            <img src="images/ponyo 2.jfif" style="width:100%">
+            <div class="text">"Rare as is true love, true friendship is rarer"</div>
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">4 / 5</div> -->
+            <img src="images/ponyo 3.jfif" style="width:100%">
+            <div class="text">"A friend is someone who makes it easy to believe in yourself"</div>
+        </div>
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">5 / 5</div> -->
+            <img src="images/ponyo 4.jfif" style="width:100%">
+            <div class="text">"I knew when I met you an adventure was going to happen"</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
